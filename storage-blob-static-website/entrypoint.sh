@@ -37,7 +37,7 @@ then
 fi
 
 # Install the Azure Storage extension (preview)
-az extension add --name storage-preview
+# az extension add --name storage-preview
 
 # Enable the Static Website feature on the storage accounts, in case it is not enabled
 az storage blob service-properties update --static-website --404-document $NOT_FOUND_FILE --index-document $INDEX_FILE
